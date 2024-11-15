@@ -21,10 +21,11 @@
           .col-xl-7.info-section
             .content-wrapper.px-lg-4.pt-lg-4.px-xl-5.py-xl-5.text-start
               p.home-main-title DIBUJO INDUSTRIAL
-              h1.home-title.mb-4.text-uppercase Fundamentos del dibujo técnico
+              h1.home-title.mb-4.text-uppercase Dibujo en proyección y representación de vistas
               p.descripcion.mb-4 La unidad 1, fundamentos del dibujo técnico, explora los principios básicos, historia, normativas y aplicaciones del dibujo técnico. Aborda conceptos clave como tipos de líneas, proyecciones ortogonales y uso de escalas, asegurando precisión en los diseños. Los estudiantes practican con ejercicios aplicando herramientas CAD y normas ISO, DIN y ANSI para una comunicación gráfica efectiva en ingeniería y diseño.
 
-              p.descripcion.mb-4.mb-lg-5.pb-lg-4.text-bold ¡Diseña con precisión, comunica con claridad y construye el futuro con cada trazo¡
+              p.descripcion.mb-4.mb-lg-5.pb-lg-4.text-bold ¡Transformen sus ideas en realidad con confianza y creatividad!
+
 
               .button-container.mt-auto
                 router-link.btn-iniciar.w-100.w-md-auto(:to="{ name: 'introduccion' }")
@@ -43,7 +44,7 @@
                 alt="Logo Tecnológica del Oriente"
               )
             .col-lg.px-0.d-none.d-lg-block
-              p.footer-text.mb-0 Todo el contenido de este curso es propiedad intelectual de [Nombre de la Universidad] y está protegido por derechos de autor. No puede ser reproducido, distribuido, modificado ni compartido sin su autorización por escrito.
+              p.footer-text.mb-0 Todo el contenido de este curso es propiedad intelectual de Corporación Tecnológica del Oriente y está protegido por derechos de autor. No puede ser reproducido, distribuido, modificado ni compartido sin su autorización por escrito.
               
 </template>
 

@@ -1,30 +1,29 @@
 <template lang="pug">
   .curso-main-container.pb-3
-    BannerInterno(:titulo="'unidad 1: FUNDAMENTOS DEL DIBUJO TÉCNICO'" :subTitulo="'INTRODUCCIÓN'")
+    BannerInterno(:titulo="'Unidad 2. Dibujo en proyección y representación de vistas'" :subTitulo="'INTRODUCCIÓN'")
     .container.tarjeta.tarjeta--blanca.p-4.p-md-5.overflow-hidden
   
-      p.mb-4(data-aos="fade-up") #[strong Bienvenidos a la Unidad 1 del curso de Dibujo Industrial.] En esta unidad, los estudiantes explorarán los conceptos fundamentales del dibujo técnico, una herramienta esencial para comunicar ideas de diseño de manera precisa y estandarizada en el ámbito de la ingeniería y la industria. ¡Que comience este fascinante recorrido por el mundo del dibujo técnico!
-  
+      .row.justify-content-center
+        .col-lg-8
+          p.mb-4(data-aos="fade-up") Hola ¡Bienvenidos a la segunda unidad del curso de Dibujo Industrial! 
+          p.mb-4(data-aos="fade-up") En el ámbito del dibujo técnico, la representación precisa de objetos tridimensionales en un formato bidimensional es esencial para la comunicación efectiva de ideas y diseños. Este proceso se lleva a cabo mediante diversas técnicas de proyección, que permiten visualizar las características y dimensiones de los objetos sin la distorsión que a menudo conlleva la perspectiva.
 
-      .row.justify-content-center.align-items-stretch.mb-5
-          .col-lg-4.mb-4(data-aos="zoom-in-up")
-            .custom-image-card.h-100
-              img.custom-image-card__image(src="@/assets/curso/tema2/1.png" alt="")
-              .custom-image-card__text.p-4
-                h5.mb-2.text-center Importancia del dibujo técnico
-                p.mb-0 El dibujo técnico actúa como un lenguaje universal que facilita la comprensión y desarrollo de proyectos complejos entre profesionales de distintas áreas, permitiendo una comunicación precisa.
-          .col-lg-4.mb-4(data-aos="zoom-in-down")
-            .custom-image-card.h-100
-              img.custom-image-card__image(src="@/assets/curso/tema2/2.png" alt="")
-              .custom-image-card__text.p-4
-                h5.mb-2.text-center Contenidos de la unidad
-                p.mb-0 La unidad abarca la creación de planos, la aplicación de normativas internacionales y el uso de software especializado, lo que garantiza una representación clara de objetos y estructuras.
-          .col-lg-4.mb-4(data-aos="zoom-in-down")
-            .custom-image-card.h-100
-              img.custom-image-card__image(src="@/assets/curso/tema2/3.png" alt="")
-              .custom-image-card__text.p-4
-                h5.mb-2.text-center Desarrollo de habilidades prácticas
-                p.mb-0 A través de ejercicios prácticos y teoría, los participantes adquieren las competencias necesarias para realizar dibujos técnicos que cumplan con altos estándares de calidad, aplicables en la elaboración de planos y esquemas.
+          .bg-color-3.p-4.mb-4
+            .row.justify-content-center.align-items-center
+              .col-lg-auto
+                figure
+                  img(src='@/assets/curso/intro/1.svg', alt='')
+              .col-lg
+                p.mb-0 La proyección ortogonal, en particular, se destaca por su capacidad para #[strong proporcionar vistas claras y detalladas de cada cara de un objeto], lo que es fundamental en disciplinas como la ingeniería, la arquitectura y el diseño industrial.
+
+          p.mb-4(data-aos="fade-up") También se analiza la disposición de las vistas según los estándares ISO, así como las secciones y cortes, que revelan la geometría interna de los objetos.  Por último, se profundiza en el papel de las tolerancias y ajustes, conceptos cruciales para asegurar la correcta fabricación y ensamblaje de piezas. A través de esta exploración, se busca destacar la relevancia de estos elementos en la práctica del dibujo técnico y su impacto en la producción industrial.
+
+
+        .col-lg-4
+          figure
+            img(src='@/assets/curso/intro/2.png', alt='')
+
+
   
   </template>
 

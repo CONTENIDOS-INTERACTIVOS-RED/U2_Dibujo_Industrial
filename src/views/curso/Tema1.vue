@@ -1,62 +1,110 @@
 <template lang="pug">
 .curso-main-container.pb-3
-  BannerInterno(:titulo="'UNIDAD 1. FUNDAMENTOS DEL DIBUJO TÉCNICO'" :subTitulo="'1. Fundamentos de Dibujo Técnico'")
+  BannerInterno(:titulo="'Unidad 2. Dibujo en proyección y representación de vistas'" :subTitulo="'1. Proyecciones ortogonales y representación de vistas'")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.overflow-hidden
 
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg
-        p.mb-4(data-aos="fade-up") El dibujo técnico, como lenguaje universal de las disciplinas técnicas, es la forma gráfica de plasmar objetos, productos, sistemas y estructuras. Se basa en técnicas y convenciones estandarizadas que permiten transmitir información detallada y precisa sobre su diseño, construcción o funcionamiento. Esta forma de comunicación visual ha sido fundamental en la ingeniería y otras disciplinas técnicas desde tiempos remotos.
-      .col-lg-auto
+    .row.justify-content-center.mb-5
+      .col-lg-7
+        p.mb-4(data-aos="fade-up") La proyección ortogonal es un método de dibujo técnico utilizado para representar objetos tridimensionales en un formato bidimensional mediante vistas planas. Consiste en proyectar cada cara del objeto sobre un plano mediante líneas perpendiculares, permitiendo observar y analizar su forma y dimensiones sin efectos de perspectiva.
+        p.mb-4(data-aos="fade-up") Las vistas principales en una proyección ortogonal incluyen la frontal, superior y lateral, cada una de las cuales muestra una perspectiva específica del objeto, como si fuera vista directamente desde el frente, arriba o el costado.
+
+        .bg-color-3.p-4.mb-4
+          .row.justify-content-center.align-items-center
+            .col-lg-auto
+              figure
+                img(src='@/assets/curso/tema1/1.svg', alt='')
+            .col-lg
+              p.mb-0 Este método es fundamental en ingeniería, arquitectura y diseño industrial, ya que asegura precisión en la representación de proporciones y dimensiones, facilitando la comunicación de detalles técnicos clave.
+
+      .col-lg-5
         figure
-          img(src='@/assets/curso/tema1/1.svg', alt='', style="width: 80px;")
+          img(src='@/assets/curso/tema1/2.png', alt='')
 
-    .bg-full-width.bg-fondo-1
-      .px-4.px-md-5.pb-md-3
+    #t_1_1.titulo-segundo
+      h2 #[span 1.1]  Tipos de Proyección Ortogonal
 
-        .row.justify-content-center.align-items-center.mb-5
-          .col-lg-10
-            LineaTiempoE.color-primario
-              .row(titulo="Prehistoria y Antigüedad" subtitulo="")
-                .col-lg-6.mb-4.mb-lg-0
-                  p La historia del dibujo técnico comienza con los primeros seres humanos que usaron el dibujo como una forma de expresión y comunicación. Los trazos en las paredes de las cuevas representaban escenas de caza y la realidad de forma rudimentaria. Con las civilizaciones de Egipto y Mesopotamia, el dibujo evolucionó a registros en papiros y tablillas de arcilla, esenciales para la planificación de construcciones monumentales como pirámides y templos, marcando un avance hacia técnicas más precisas.
-                .col-lg-6
-                  figure
-                    img(src='@/assets/curso/tema1/2.png', alt='')
+    p(data-aos="fade-up") En dibujo técnico, se utilizan distintos tipos de proyecciones ortogonales para representar objetos tridimensionales en un formato bidimensional. Los tipos principales son:
 
-              .row(titulo="Edad media" subtitulo="")
-                .col-lg-6.mb-4.mb-lg-0
-                  p Durante esta época, el dibujo técnico fue desarrollado por una élite selecta. Monjes creaban manuscritos ilustrados que combinaban arte y técnica, detallando principios arquitectónicos y cálculos astronómicos. Ingenieros y artistas plasmaron conocimientos en códices con diseños de máquinas y planificación estructural. Un ejemplo notable es Leonardo da Vinci, cuyas obras anticiparon inventos revolucionarios.
-                .col-lg-6
-                  figure
-                    img(src='@/assets/curso/tema1/3.png', alt='')
+    .bg-full-width.bg-fondo-slider.mb-5
+      .p-4.p-md-5
+        SlyderA(tipo="b").bg-white
+          .row.p-4.px-md-5.py-lg-5.align-items-start
+            .d-none.d-lg-block.col-md-6.col-lg-4
+              figure
+                img(src='@/assets/curso/tema1/3.png', alt='')
 
-              .row(titulo="Renacimiento" subtitulo="")
-                .col-lg-6.mb-4.mb-lg-0
-                  p Este período transformó la representación del mundo tridimensional con la introducción de la perspectiva. Artistas e ingenieros como Brunelleschi y Leonardo da Vinci perfeccionaron las técnicas de proyección, lo cual permitió que los dibujos técnicos fueran más realistas y precisos, representando fielmente las estructuras y el espacio.
-                .col-lg-6
-                  figure
-                    img(src='@/assets/curso/tema1/4.png', alt='')
+            .col-md-12.col-lg-7.mb-4.mb-md-0
+              .ps-4
+                h5 Proyección ortogonal multivista
+                p Esta técnica representa el objeto mediante varias vistas independientes y alineadas entre sí, como la vista frontal, lateral y superior. Es muy común en ingeniería y diseño, ya que permite ver cada cara del objeto sin distorsión y con exactitud dimensional.
 
-              .row(titulo="Revolución Industrial" subtitulo="")
-                .col-lg-6.mb-4.mb-lg-0
-                  p El dibujo técnico se volvió indispensable con la industrialización. La producción en masa demandaba estándares rigurosos, surgiendo las primeras normas para facilitar la comunicación entre ingenieros y fabricantes. Además, herramientas como el compás y la escuadra mejoraron la precisión de los dibujos, convirtiendo al dibujo técnico en un pilar de la industria.
-                .col-lg-6
-                  figure
-                    img(src='@/assets/curso/tema1/5.png', alt='')
+          .row.p-4.px-md-5.py-lg-5.align-items-center
+            .d-none.d-lg-block.col-md-6.col-lg-4
+              figure
+                img(src='@/assets/curso/tema1/4.png', alt='')
 
-              .row(titulo="Siglo XX" subtitulo="")
-                .col-lg-6.mb-4.mb-lg-0
-                  p La llegada de la tecnología cambió profundamente el dibujo técnico. La invención de la computadora trajo el diseño asistido por computadora (CAD), sustituyendo el dibujo manual y permitiendo niveles de precisión y complejidad antes impensables. Normas globales de la ISO aseguraron la consistencia en la representación gráfica, favoreciendo la colaboración internacional.
-                .col-lg-6
-                  figure
-                    img(src='@/assets/curso/tema1/6.png', alt='')
+            .col-md-12.col-lg-7.mb-4.mb-md-0
+              .ps-4
+                h5 Proyección isométrica
+                p En esta proyección, el objeto se muestra en tres dimensiones, con los ejes separados en ángulos de 120° entre sí y manteniendo la misma escala en los tres ejes. Este tipo es común en diseño industrial y ensamblaje, ya que ofrece una vista del objeto en conjunto sin perspectiva.
+                p Similar a la isométrica, esta proyección mantiene la escala en dos de los tres ejes, mientras el tercero se representa en una escala distinta, permitiendo resaltar ciertas dimensiones del objeto.
 
-              .row(titulo="Actualidad" subtitulo="")
-                .col-lg-6.mb-4.mb-lg-0
-                  p Hoy, el dibujo técnico es digital. Software avanzado permite crear dibujos detallados, modelar en 3D, simular y analizar la viabilidad estructural de proyectos. Además, se integra con tecnologías emergentes como la realidad aumentada, la impresión 3D y la ingeniería asistida por computadora, expandiendo su influencia a muchas disciplinas.
-                .col-lg-6
-                  figure
-                    img(src='@/assets/curso/tema1/7.png', alt='')
+
+          .row.p-4.px-md-5.py-lg-5.align-items-center
+            .d-none.d-lg-block.col-md-6.col-lg-4
+              figure
+                img(src='@/assets/curso/tema1/5.png', alt='')
+
+            .col-md-12.col-lg-7.mb-4.mb-md-0
+              .ps-4
+                h5 Proyección dimétrica
+                p Similar a la isométrica, esta proyección mantiene la escala en dos de los tres ejes, mientras el tercero se representa en una escala distinta, permitiendo resaltar ciertas dimensiones del objeto.
+
+
+          .row.p-4.px-md-5.py-lg-5.align-items-center
+            .d-none.d-lg-block.col-md-6.col-lg-4
+              figure
+                img(src='@/assets/curso/tema1/6.png', alt='')
+
+            .col-md-12.col-lg-7.mb-4.mb-md-0
+              .ps-4
+                h5 Proyección trimétrica
+                p Con ángulos y escalas diferentes en cada uno de los tres ejes, esta proyección es más compleja pero útil en ilustraciones técnicas donde se necesita detalle sin perspectiva clásica.
+
+          .row.p-4.px-md-5.py-lg-5.align-items-center
+            .d-none.d-lg-block.col-md-6.col-lg-4
+              figure
+                img(src='@/assets/curso/tema1/7.png', alt='')
+
+            .col-md-12.col-lg-7.mb-4.mb-md-0
+              .ps-4
+                h5 Proyección caballera
+                p Este tipo de proyección presenta el objeto con dos dimensiones en vista frontal, mientras la tercera se proyecta en ángulo (usualmente de 45°). Es útil en esquemas y planos arquitectónicos que requieren una visualización simplificada sin distorsión.
+
+    #t_1_2.titulo-segundo
+      h2 #[span 1.2]  Las vistas en dibujo técnico
+
+    .row.justify-content-center.mb-5
+      .col-lg-7
+        p.mb-4(data-aos="fade-up") En el dibujo técnico, las vistas son herramientas fundamentales para representar en dos dimensiones un objeto tridimensional. Cada vista ofrece una proyección específica de uno de los lados del objeto, permitiendo detallar sus características de forma, tamaño y estructura de manera precisa. Estas representaciones ayudan a comunicar con claridad la forma y funcionalidad de un diseño, proporcionando una guía clara y detallada para quienes trabajan en su desarrollo o manufactura.
+
+        .bg-color-2.p-4.mb-4
+          p.mb-0 La claridad en las vistas facilita que el objeto sea comprendido por otras personas, ya sean ingenieros, diseñadores o fabricantes, quienes dependen de esta información para replicar el diseño sin ambigüedades. Al no necesitar una representación tridimensional, las vistas ofrecen una solución simplificada para comunicar la estructura y el acabado de cada lado del objeto, desde su cara principal hasta los detalles más pequeños que deben considerarse en el proceso de fabricación.
+
+      .col-lg-5
+        figure
+          img(src='@/assets/curso/tema1/8.png', alt='')
+
+    h2.mb-4(data-aos="fade-up") Disposición de las vistas en dibujo técnico
+    p.mb-4(data-aos="fade-up") En el dibujo técnico, la disposición de las vistas es fundamental para interpretar correctamente un objeto. Según el método de proyección, ya sea el ISO A (americano) o el ISO E (europeo), las vistas cambian de posición para facilitar su comprensión en distintas regiones. Lo invitamos a revisar el video para profundizar: 
+
+    .bg-full-width.bg-fondo-slider.mb-5
+      .p-4.p-md-5
+        figure
+          .video
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/afV-H2S3ALg?si=vbRZ140Nfi0BbCXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+          figcaption Video: Leyenda del video
+
 </template>
 
 <script>

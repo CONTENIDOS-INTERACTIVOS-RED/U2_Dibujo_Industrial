@@ -1,156 +1,122 @@
 <template lang="pug">
 .curso-main-container.pb-3
-  BannerInterno(:titulo="'UNIDAD 1. FUNDAMENTOS DEL DIBUJO TÉCNICO'" :subTitulo="'3.Tipos de líneas, proyecciones ortogonales y escalas'")
+  BannerInterno(:titulo="'Unidad 2. Dibujo en proyección y representación de vistas'" :subTitulo="'3. Tolerancias y ajustes en los planos técnicos'")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
     
-    p(data-aos="fade-up").mb-5 En el dibujo técnico, los tipos de líneas definen bordes, ejes y detalles ocultos. Las proyecciones ortogonales descomponen un objeto en vistas (frontal, lateral y superior), mientras que las escalas ajustan el tamaño del dibujo al formato, manteniendo la proporción con las dimensiones reales del objeto.
+    .bg-color-3.mb-4
+      .row.justify-content-center.align-items-center
+        .col-lg
+          .px-5
+            p.mb-0(data-aos="fade-up") Las tolerancias y ajustes son conceptos esenciales en el dibujo técnico y la ingeniería, fundamentales para asegurar que las piezas se ensamblen y funcionen correctamente dentro de un sistema. A continuación, se detallan estos términos y su importancia en la elaboración de planos técnicos.
+        .col-lg-auto
+          figure
+            img(src='@/assets/curso/tema3/1.png', alt='')
 
 
-    .bg-full-width.bg-fondo-2.mb-5
-      .px-4.px-md-5.pb-md-5
-        h2(data-aos="fade-up")#t_3_1 Tipos de líneas
+    h2(data-aos="fade-up")#t_3_1 Tolerancias
 
-        p(data-aos="fade-up").mb-5 #[strong Según la NTC 1777], que establece normas para el dibujo técnico en Colombia, se definen varios tipos de líneas que deben usarse en un plano técnico. A continuación, encontramos los principales tipos de líneas y sus usos específicos:
-
-        .row.justify-content-center.align-items-center
-          .col-lg-12
-            SlyderF(columnas="col-12 col-lg-6 col-xl-4")
-              .bg-color-white.p-3.py-md-5.px-md-4.box-shadow.h-100.brounded-sm
-                img(src='@/assets/curso/tema3/1.png' alt='AvatarTop').mx-auto.mb-4
-                h5.text-center.mb-4 Línea continua
-                p.text-center Contornos visibles de objetos, la línea más común en los dibujos técnicos. Ejemplo: bordes y límites de piezas.
-              .bg-color-white.p-3.py-md-5.px-md-4.box-shadow.h-100.brounded-sm
-                img(src='@/assets/curso/tema3/2.png' alt='AvatarTop').mx-auto.mb-4
-                h5.text-center.mb-4 Línea discontinua (o de trazo y espacio)
-                p.text-center Contornos invisibles o bordes ocultos. Ejemplo: bordes de piezas que no son visibles desde la vista actual.
-              .bg-color-white.p-3.py-md-5.px-md-4.box-shadow.h-100.brounded-sm
-                img(src='@/assets/curso/tema3/3.png' alt='AvatarTop').mx-auto.mb-4
-                h5.text-center.mb-4 Línea de centro
-                p.text-center Indica ejes de simetría y centros de círculos. Ejemplo: ejes de rotación.
-
-    h2(data-aos="fade-up")#t_3_2 Proyecciones ortogonales
-
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-7
-        p(data-aos="fade-up") Las proyecciones ortogonales son un método de representación gráfica empleado en el dibujo técnico para mostrar un objeto desde diferentes vistas bidimensionales. Este método es fundamental en la ingeniería y el diseño, ya que facilita la representación precisa de la forma y dimensiones de un objeto.
-        .bg-color-2.p-4.mb-4(data-aos="fade-up")
-          p.mb-0 Las proyecciones ortogonales son representaciones de un objeto en las que las líneas de proyección son perpendiculares a los planos de proyección. Esto garantiza que las dimensiones y proporciones del objeto se mantengan exactas, evitando distorsiones en las vistas.
-      .col-lg-5
-        figure
-          img(src='@/assets/curso/tema3/4.png', alt='')
+    p(data-aos="fade-up").mb-5 La tolerancia se refiere al rango de variación permitido en las dimensiones de una pieza, establecido para garantizar que, a pesar de posibles variaciones en el proceso de fabricación, la pieza siga siendo funcional y cumpla con las especificaciones requeridas.
 
     
-    h2(data-aos="fade-up")#t_3_3 Vistas principales
+    h2(data-aos="fade-up")#t_2_1.mb-5 Tipos de tolerancias
 
-    p(data-aos="fade-up") Generalmente, se emplean tres vistas principales en las proyecciones ortogonales:
-
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-6
-        .titulo-figura.mb-2
-          h5 Figura 1. 
-          span Vistas de un objeto  
-        figure
-          img(src='@/assets/curso/tema3/5.png', alt='') 
-          figcaption Nota. #[span Tomado de Méndez, G. (2017)]
-      .col-lg-6
-        ol.lista-ol--cuadro.mt-5
-          li 
-            .lista-ol--cuadro__vineta
-              span A
-            | #[strong Vista de frente o alzado]: muestra la altura y el ancho del objeto. Es la vista más comúnmente utilizada.
-          li 
-            .lista-ol--cuadro__vineta
-              span B
-            | #[strong Vista superior o planta]: muestra el ancho y la profundidad del objeto, desde arriba.
-          li 
-            .lista-ol--cuadro__vineta
-              span C
-            | #[strong Vista derecha o lateral derecha]: muestra la altura y la profundidad del objeto desde un lado
-          li 
-            .lista-ol--cuadro__vineta
-              span D
-            | #[strong Vista izquierda o lateral izquierda]: muestra la altura y la profundidad del objeto desde un lado
-          li 
-            .lista-ol--cuadro__vineta
-              span E
-            | #[strong Vista inferior]: muestra el ancho y la profundidad del objeto, desde abajo.
-          li 
-            .lista-ol--cuadro__vineta
-              span F
-            | #[strong Vista posterior]: muestra la altura y el ancho del objeto, desde atrás. 
-
-
-    h2(data-aos="fade-up")#t_3_4 Organización de las vistas
-
-    p(data-aos="fade-up") #[strong Las normas ISO (Organización Internacional de Normalización)] que son esenciales en el dibujo técnico, indican que #[strong ISO-A] e #[strong ISO-E] se refieren a diferentes métodos de proyección utilizados en los dibujos técnicos de la siguiente manera:
-
-
-    TabsC.color-acento-contenido.mb-5
-      .tabs-content.border.px-4.p-md-5.py-3(titulo="Sistema Americano ISO-A" :icon="require('@/assets/bullets/icon-tab-c.svg')" )
-        .row
-          .col-md-6.col-lg-7.col-xl-8.mb-4.mb-md-0
-            h4 Sistema Americano ISO-A
-            p Conocido como el método de proyección del tercer ángulo, es más común en América del Norte. Aquí, el plano de proyección se coloca entre el observador y el objeto
-        
-          .col-md-6.col-lg-5.col-xl-4
-            figure(data-aos="zoom-in")
-              img(src='@/assets/curso/tema3/6.png', alt='')
-      .tabs-content.border.px-4.p-md-5.py-3(titulo="Sistema Europeo ISO-E" :icon="require('@/assets/bullets/icon-tab-c.svg')" )
-        .row
-          .col-md-6.col-lg-7.col-xl-8.mb-4.mb-md-0
-            h4 Sistema Europeo ISO-E
-            p También conocido como el método de proyección del primer ángulo, es comúnmente utilizado en Europa y Asia. En este método, el objeto se coloca entre el observador y el plano de proyección.
-        
-          .col-md-6.col-lg-5.col-xl-4
-            figure(data-aos="zoom-in")
-              img(src='@/assets/curso/tema3/7.png', alt='')
-
-
-    h2(data-aos="fade-up")#t_3_5 Dimensiones y cotas
-
-    .row.justify-content-center.align-items-center.mb-5
+    .row.justify-content-center.align-items-start.mb-5
       .col-lg-7
-        .bg-color-1.p-4
+        p(data-aos="fade-up").mb-5 Esta clasificación permite entender cómo cada tipo de tolerancia contribuye a asegurar la precisión y funcionalidad de los componentes en un sistema de ensamblaje o fabricación.
+        AcordionA(tipo="b")
+          .div(titulo="Tolerancias dimensionales")
+            p Enfocadas en la variación permitida en dimensiones lineales (como longitud y ancho) de una pieza.
+          .div(titulo="Tolerancias geométricas")
+            p Relacionadas con la forma, orientación y ubicación de características de la pieza, incluyendo planitud, perpendicularidad y concentricidad.
+
+      .col-lg-5
+        figure
+          img(src='@/assets/curso/tema3/2.png', alt='')
+
+
+    .row.justify-content-center.align-items-center.mb-4
+      .col-lg-10
+        p(data-aos="fade-up").mt-4 Las tolerancias son fundamentales para asegurar un ajuste adecuado de las piezas. Una tolerancia demasiado amplia puede resultar en un ensamblaje impreciso o suelto, mientras que tolerancias excesivamente estrictas pueden incrementar los costos de producción.
+
+    p(data-aos="fade-up").mb-5 Las tolerancias son fundamentales para asegurar un ajuste adecuado de las piezas. Una tolerancia demasiado amplia puede resultar en un ensamblaje impreciso o suelto, mientras que tolerancias excesivamente estrictas pueden incrementar los costos de producción.
+
+    .titulo-figura.mb-4
+      h5 Figura 3. 
+      span Ejemplo de tolerancias 
+
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-10
+        figure.mb-4
+          img(src='@/assets/curso/tema3/3.png', alt='')
+          figcaption #[strong Nota]. #[span Figura tomada de Martínez y Pérez (2019).]
+
+        .bg-color-3.p-4.mb-4
           .row.justify-content-center.align-items-center
             .col-lg-auto
               figure
                 img(src='@/assets/curso/tema3/8.svg', alt='')
             .col-lg
-              p.mb-0 Las proyecciones ortogonales incluyen cotas y dimensiones para especificar medidas críticas, como longitud, ancho, altura y diámetros. Esto es esencial para la fabricación y el ensamblaje.
+              h5.mb-1 Representación en planos
+              p.mb-0 En los planos técnicos, las tolerancias se indican mediante símbolos o notaciones específicas, que incluyen el valor nominal seguido de un rango de tolerancia (por ejemplo, 10 ± 0,1 mm).
+
+
+
+
+    h2(data-aos="fade-up")#t_3_1 Ajustes
+
+    p(data-aos="fade-up").mb-5 El ajuste describe la relación de tolerancias entre dos piezas que deben ensamblarse. Esta relación se define por las tolerancias de cada pieza y cómo interactúan entre sí.
+
+
+    h2(data-aos="fade-up")#t_2_1.mb-5 Tipos de ajustes
+
+    .row.justify-content-center.align-items-start.mb-5
+      .col-lg-7
+        p(data-aos="fade-up").mb-5 Cada tipo de ajuste define el nivel de holgura o interferencia entre las piezas, afectando así el movimiento, la estabilidad y la funcionalidad del ensamblaje en aplicaciones mecánicas.
+        AcordionA(tipo="b")
+          .div(titulo="Ajuste deslizante")
+            p Permite el movimiento relativo entre las piezas, como un eje que se desliza dentro de un orificio.
+          .div(titulo="Ajuste a presión")
+            p Las piezas se ensamblan con un ajuste apretado que requiere fuerza para unirlas, como un pasador encajado en un orificio.
+          .div(titulo="Ajuste interferente")
+            p Genera una interferencia intencionada entre las piezas, resultando en un ajuste muy apretado o conexiones permanentes.Genera una interferencia intencionada entre las piezas, resultando en un ajuste muy apretado o conexiones permanentes.
       .col-lg-5
         figure
-          img(src='@/assets/curso/tema3/9.png', alt='')
+          img(src='@/assets/curso/tema3/4.png', alt='')
 
-    h2(data-aos="fade-up")#t_3_6 Proyecciones auxiliares
 
-    p(data-aos="fade-up") Además de las vistas principales, pueden crearse proyecciones auxiliares para representar ángulos o características que no se pueden mostrar claramente en las vistas estándar.
+    .row.justify-content-center.align-items-center.mb-4
+      .col-lg-10
+        p(data-aos="fade-up").mt-4 La elección del tipo de ajuste es crucial para la funcionalidad y el rendimiento del ensamblaje. Un ajuste incorrecto puede generar desgaste prematuro, fallos en el ensamblaje o problemas operativos.
+
+    p(data-aos="fade-up").mb-5 Las tolerancias son fundamentales para asegurar un ajuste adecuado de las piezas. Una tolerancia demasiado amplia puede resultar en un ensamblaje impreciso o suelto, mientras que tolerancias excesivamente estrictas pueden incrementar los costos de producción.
+
+    .titulo-figura.mb-4
+      h5 Figura 4. 
+      span Representación en planos 
 
     .row.justify-content-center.align-items-center.mb-5
-      .col-lg-6
-        .titulo-figura.mb-2
-          h5 Figura 2. 
-          span Plano auxiliar
-        figure
-          img(src='@/assets/curso/tema3/5.png', alt='') 
-          figcaption #[strong Nota]. #[span Tomado de Universidad Nacional de San Juan. (2020).]
-      .col-lg-6
-        p.mb-4 Las ventajas de las proyecciones ortogonales son: 
-        .bg-color-3.p-4.mb-2(v-for="item in items" :key="item.text" data-aos="fade-up")
+      .col-lg-10
+        figure.mb-4
+          img(src='@/assets/curso/tema3/5.png', alt='')
+          figcaption #[strong Nota]. #[span Figura tomada de IMH Campus. (s.f.).]
+
+        .bg-color-3.p-4.mb-4
           .row.justify-content-center.align-items-center
             .col-lg-auto
               figure
-                img(src='@/assets/bullets/icon-1.svg' alt='' style="width: 20px;")
+                img(src='@/assets/curso/tema3/8.svg', alt='')
             .col-lg
-              p.mb-0(v-html="item.text")
-        .bg-color-4.p-4.mt-4
-          h5 Ejemplo práctico
-          p Para conocer sobre la aplicación de proyecciones ortogonales lo invitamos a consultar el PDF ejemplo práctico.
-          a.anexo.bg-white.w-fit(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")(data-aos="flip-up")
-              .anexo__icono(:style="{'background-color': '#FCDFDB'}")
-                img(src="@/assets/template/icono-pdf.svg")
-              .anexo__texto
-                p <strong>Anexo. </strong> Ejemplo práctico
+              h5.mb-1 Representación en planos
+              p.mb-0 Los ajustes se especifican junto con las tolerancias en los planos técnicos, indicando la relación dimensional entre las piezas que se ensamblarán.
 
+    .bg-color-4.mb-4
+      .row.justify-content-center.align-items-center
+        .col-lg
+          .px-5
+            p.mb-0(data-aos="fade-up") Las tolerancias y ajustes son elementos clave en la creación de planos técnicos, ya que aseguran que las piezas se fabriquen dentro de límites aceptables y funcionen adecuadamente en un ensamblaje. Una especificación y representación adecuada de estos aspectos en los planos resulta esencial para el éxito en el diseño y producción de componentes y sistemas mecánicos. 
+        .col-lg-auto
+          figure
+            img(src='@/assets/curso/tema3/6.png', alt='')
 
     .row.material-complementario
       h2 MATERIAL COMPLEMENTARIO

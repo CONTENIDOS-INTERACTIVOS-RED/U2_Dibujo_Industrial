@@ -1,1 +1,1 @@
-module.exports = 'Unidad 1. Fundamentos del dibujo técnico'
+module.exports = 'Unidad 2. Dibujo en proyección y representación de vistas'
