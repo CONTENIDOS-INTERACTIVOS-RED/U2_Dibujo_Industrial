@@ -25,7 +25,7 @@ export default {
       {
         nombreRuta: 'introduccion',
         icono: 'fas fa-info-circle',
-        unidad: 'UNIDAD 1.',
+        unidad: 'UNIDAD 2.',
         numero: '',
         titulo: 'Introducción',
         desarrolloContenidos: true,
@@ -35,90 +35,38 @@ export default {
         icono: 'far fa-file-alt',
         unidad: 'Unidad 1.',
         numero: '1.',
-        titulo: 'Conceptos de paz y cultura de paz',
+        titulo: 'Proyecciones ortogonales y representación de vistas',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
             numero: '1.1',
-            titulo: 'Fundamentos de Dibujo Técnico',
+            titulo: 'Tipos de Proyección Ortogonal',
             hash: 't_1_1',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '1.2',
+            titulo: 'Las vistas en dibujo técnico',
+            hash: 't_1_2',
           },
         ],
       },
       {
         nombreRuta: 'tema2',
         icono: 'far fa-file-alt',
-        unidad: 'Unidad 1.',
+        unidad: 'Unidad 2.',
         numero: '2.',
-        titulo: 'Conceptos básicos de dibujo técnico',
+        titulo: 'Secciones y cortes en el dibujo industrial',
         desarrolloContenidos: true,
-        subMenu: [
-          {
-            icono: 'far fa-file-alt',
-            numero: '2.1',
-            titulo: 'Uso de escalas y proporciones',
-            hash: 't_2_1',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '2.2',
-            titulo: 'Incluir información sobre materiales y procesos',
-            hash: 't_2_2',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '2.3',
-            titulo: 'Aplicaciones del dibujo técnico',
-            hash: 't_2_3',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '2.4',
-            titulo: 'Herramientas y software',
-            hash: 't_2_4',
-          },
-        ],
       },
       {
         nombreRuta: 'tema3',
         icono: 'far fa-file-alt',
         unidad: 'Unidad 1.',
         numero: '3.',
-        titulo: 'Factores estructurales y dinámicas de poder',
+        titulo: 'Tolerancias y ajustes en los planos técnicos',
         desarrolloContenidos: true,
-        subMenu: [
-          {
-            icono: 'far fa-file-alt',
-            numero: '3.1',
-            titulo: 'Tipos de líneas',
-            hash: 't_3_1',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '3.2',
-            titulo: 'Proyecciones ortogonales',
-            hash: 't_3_2',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '3.3',
-            titulo: 'Vistas principales',
-            hash: 't_3_3',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '3.4',
-            titulo: 'Organización de las vistas',
-            hash: 't_3_4',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '3.5',
-            titulo: 'Dimensiones y cotas',
-            hash: 't_3_5',
-          },
-        ],
       },
       {
         nombreRuta: 'tema4',
@@ -170,81 +118,82 @@ export default {
   },
   referencias: [
     {
-      referencia: 'Méndez, G. (2017). Dibujo Técnico.',
-      link:
-        'https://teoriadeldibujotecnico.wordpress.com/2017/08/09/vistas-de-un-objeto/',
-    },
-    {
       referencia:
-        'Universidad Nacional de San Juan. (2020). Dibujo y sistemas de representación. ',
+        'American National Standards Institute. (2020). ANSI Y14.5: Dimensioning and tolerancing.',
       link:
-        'https://dibujoysistemas.fi.unsj.edu.ar/wp-content/uploads/08-UVIII-VISTAS-AUXILIARES-CIV-2020.pdf',
+        'https://www.asme.org/learning-development/find-course/fundamentals-gd-t/online',
     },
   ],
   glosario: [
     {
-      termino: 'Comunicación',
+      termino: 'Ajuste',
       significado:
-        'proceso de transmitir ideas y diseños de manera clara y precisa.',
+        'relación de tolerancias entre dos piezas que se ensamblan, determinando cómo interactúan entre sí.',
     },
     {
-      termino: 'Dibujo técnico',
+      termino: 'Ajuste deslizante',
       significado:
-        'representación gráfica de objetos, sistemas y estructuras, utilizada para comunicar información precisa en ingeniería y otras disciplinas técnicas.',
+        'permite el movimiento relativo entre piezas, como un eje que se desliza dentro de un orificio.',
     },
     {
-      termino: 'Escalas',
+      termino: 'Ajuste a presión',
       significado:
-        'relaciones proporcionales entre las dimensiones de un objeto real y su representación en un dibujo.',
+        'un ajuste más apretado que requiere fuerza para ensamblar las piezas, como un pasador encajando en un orificio.',
     },
     {
-      termino: 'Línea continua',
+      termino: 'Ajuste interferente',
       significado:
-        'tipo de línea que representa contornos visibles de objetos.',
+        'proporciona una interferencia intencionada entre piezas, resultando en un ajuste muy apretado o conexiones permanentes.',
     },
     {
-      termino: 'Línea de Cota',
+      termino: 'Proyección ortogonal',
       significado:
-        'línea que muestra medidas y dimensiones, incluyendo flechas y textos explicativos.',
+        'método de dibujo técnico que representa objetos tridimensionales en un plano bidimensional mediante líneas perpendiculares a un plano.',
     },
     {
-      termino: 'Línea discontinua',
-      significado: 'línea que indica contornos invisibles o bordes ocultos.',
+      termino: 'Proyección ortogonal multivista',
+      significado:
+        'representación del objeto mediante varias vistas alineadas, mostrando cada cara sin distorsión.',
     },
     {
-      termino: 'Normas ISO',
+      termino: 'Proyección isométrica',
       significado:
-        'conjunto de estándares internacionales que regulan la representación y calidad en el dibujo técnico.',
+        'representación en tres dimensiones donde los ejes están separados en ángulos de 120° y mantienen la misma escala en los tres ejes.',
     },
     {
-      termino: 'Precisión',
+      termino: 'Proyección dimétrica',
       significado:
-        'grado en el que las dimensiones y detalles de un dibujo son exactos y sin errores.',
+        'muestra la escala en dos de los tres ejes, con el tercero en una escala diferente, resaltando dimensiones específicas.',
     },
     {
-      termino: 'Proporciones',
+      termino: 'Proyección trimétrica',
       significado:
-        'relación entre las dimensiones de diferentes partes de un objeto para asegurar coherencia en el diseño.',
+        'proyección más compleja con ángulos y escalas diferentes en cada uno de los tres ejes.',
     },
     {
-      termino: 'Proyecciones auxiliares',
+      termino: 'Proyección caballera',
       significado:
-        'vistas adicionales utilizadas para mostrar características que no son evidentes en las vistas principales.',
+        'representa el objeto con dos dimensiones en vista frontal y la tercera proyectada en ángulo (usualmente de 45°).',
     },
     {
-      termino: 'Proyecciones ortogonales',
+      termino: 'Sección',
       significado:
-        'método de representación gráfica que muestra un objeto en varias vistas bidimensionales, manteniendo las dimensiones reales.',
+        'representación de un objeto que ilustra como se vería si se cortara a través de un plano específico.',
     },
     {
-      termino: 'Símbolos estandarizados',
+      termino: 'Corte',
       significado:
-        'representaciones gráficas convencionales que facilitan la interpretación universal de los planos.',
+        'vista del objeto a través de una línea de corte, mostrando un único elemento o conjunto de elementos.',
     },
     {
-      termino: 'Software CAD',
+      termino: 'Vista en sección',
       significado:
-        'programas de diseño asistido por computadora utilizados para crear y modificar dibujos técnicos',
+        'muestra el interior del objeto como si estuviera "cortado" en una determinada posición.',
+    },
+    {
+      termino: 'Tolerancia',
+      significado:
+        'rango de variación permitido en las dimensiones de una pieza para asegurar su funcionalidad.',
     },
   ],
   complementario: [

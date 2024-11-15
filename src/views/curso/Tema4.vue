@@ -1,9 +1,9 @@
 <template lang="pug">
   .curso-main-container.pb-3
-    BannerInterno(:titulo="'UNIDAD 1. FUNDAMENTOS DEL DIBUJO TÉCNICO'" :subTitulo="'SINTESIS'")
+    BannerInterno(:titulo="'Unidad 2. Dibujo en proyección y representación de vistas'" :subTitulo="'SINTESIS'")
     .container.tarjeta.tarjeta--blanca.p-4.p-md-5
       
-      p(data-aos="fade-up").mb-5 Esta unidad presenta los conceptos básicos del dibujo técnico, una herramienta fundamental para comunicar y documentar proyectos en ingeniería y diseño. Se exploran elementos esenciales como tipos de líneas, proyecciones, escalas y normas internacionales (ISO, ANSI, DIN) que garantizan precisión y coherencia en la representación gráfica de objetos y sistemas.
+      p(data-aos="fade-up").mb-5 En esta unidad 2, Dibujo en proyección y representación de vistas, se explora el uso de la proyección ortogonal en el dibujo técnico, esencial para representar objetos tridimensionales en dos dimensiones mediante vistas planas, como la frontal, superior y lateral. Este método es clave en ingeniería, arquitectura y diseño industrial. Se detallan tipos de proyecciones como la multivista, isométrica, dimétrica, trimétrica y caballera, junto con la importancia de las vistas y las normas ISO para su disposición. Finalmente, se abordan tolerancias y ajustes, cruciales para un ensamblaje preciso y la funcionalidad de los componentes.
 
       .row.justify-content-center
         .col-lg-12.mb-5
@@ -12,17 +12,11 @@
   </template>
 
 <script>
-import BannerInterno from '../../components/plantilla/BannerInterno'
 export default {
   name: 'Tema4',
-  components: {
-    BannerInterno,
-  },
-  mounted() {
-    this.$nextTick(() => {
-      this.$aosRefresh()
-    })
-  },
+  data: () => ({
+    // variables de vue
+  }),
 }
 </script>
 

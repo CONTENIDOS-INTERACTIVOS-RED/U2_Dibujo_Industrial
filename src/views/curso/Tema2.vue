@@ -13,7 +13,7 @@
             img(src='@/assets/curso/tema2/1.png', alt='')
 
 
-    h2(data-aos="fade-up")#t_2_1 Secciones
+    h2(data-aos="fade-up") Secciones
 
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-6
@@ -33,7 +33,7 @@
           figcaption #[strong Nota]. #[span Figura tomada de Dibujo Técnico (2015).]
 
 
-    h2(data-aos="fade-up")#t_2_2 Tipos de secciones
+    h2(data-aos="fade-up") Tipos de secciones
 
     p(data-aos="fade-up") Las secciones en dibujo técnico se clasifican en varias categorías según la parte del objeto que representan y el detalle que brindan.
 
@@ -55,7 +55,7 @@
 
 
 
-    h2(data-aos="fade-up")#t_2_1 Cortes
+    h2(data-aos="fade-up") Cortes
 
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-6
@@ -78,7 +78,7 @@
 
     .bg-full-width.bg-fondo-2.mb-5
       .p-4.p-md-5
-        h2(data-aos="fade-up")#t_2_3 Relevancia de secciones y cortes
+        h2(data-aos="fade-up") Relevancia de secciones y cortes
       
         p(data-aos="fade-up").mb-5 Las secciones y cortes son elementos esenciales en el dibujo técnico debido a los siguientes aspectos:
 
@@ -102,34 +102,36 @@
                 h5.mb-2.text-center Comunicación
                 p.mb-0 Facilitan la transmisión de ideas complejas en el diseño y la construcción, asegurando que todos los involucrados comprendan claramente el producto final.
   
+    .row.material-complementario
+      h2 MATERIAL COMPLEMENTARIO
+      .col-12.col-md-6.col-lg-7
+        p Los invitamos a explorar el material complementario de este curso, en esta sección encontrará recursos que le permitirán profundizar  y enriquecer su aprendizaje en los temas tratados en esta unidad.
+        p.d-flex.my-4
+          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+          a(href="https://archive.org/details/engineeringdrawi00fren" target="_blank" rel="noopener noreferrer") French, T. E., Vierck, C. J., & Foster, R. J. (2002). Engineering Drawing and Graphic Technology. McGraw-Hill.
+        p.d-flex.my-4
+          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+          a(href="https://www.academia.edu/32721635/MANUAL_DE_DIBUJO_T%C3%89CNICO_I" target="_blank" rel="noopener noreferrer") Siqueiros, C. A. (2010). Manual de dibujo técnico. Academia de Ingeniería. Recuperado de Academia de Ingeniería de México:
+        p.d-flex.my-4
+          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+          a(href="https://scholar.lib.vt.edu/ejournals/JTE/" target="_blank" rel="noopener noreferrer") Stoli, C. (2010). A primer on technical drawing. Journal of Technology Education, 22(1). Recuperado de Journal of Technology Education:
+        p.d-flex.my-4
+          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+          a(href="https://docs.google.com/viewerng/viewer?url=ijarlie.com/AdminUpload/Pdf/An_overview_of_teaching_learning_process_in_Engineering_Graphics_ijarlie9390.pdf" target="_blank" rel="noopener noreferrer") Dixit, S., & Kumar, S. (2017). An overview of engineering graphics. International Journal of Engineering Research and Technology, 6(5), 78-83. Recuperado de ResearchGate:
+        p.d-flex.my-4
+          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+          a(href="https://www.academia.edu/35825997/NTC_Compendio_de_Dibujo_Tecnico_1.pdf" target="_blank" rel="noopener noreferrer") Instituto Colombiano de Normas Técnicas y Certificación. (2002). Compendio de dibujo técnico: Norma técnica colombiana.
+      .col-12.col-md-6.col-lg-3.offset-lg-1
+        figure
+          img(src='@/assets/componentes/material-complementario.svg', alt='')
 </template>
 
 <script>
-import BannerInterno from '../../components/plantilla/BannerInterno'
-
 export default {
   name: 'Tema2',
-  components: {
-    BannerInterno,
-  },
-  data() {
-    return {
-      items: [
-        { text: 'Ingeniería mecánica, eléctrica, entre otras.' },
-        { text: 'Diseño de productos y embalajes.' },
-        { text: 'Fabricación y producción.' },
-        { text: 'Educación y capacitación técnica.' },
-        { text: 'Investigación y desarrollo.' },
-        { text: 'Industria manufacturera.' },
-        { text: 'Arquitectura y construcción.' },
-      ],
-    }
-  },
-  mounted() {
-    this.$nextTick(() => {
-      this.$aosRefresh()
-    })
-  },
+  data: () => ({
+    // variables de vue
+  }),
 }
 </script>
 

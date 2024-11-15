@@ -13,12 +13,12 @@
             img(src='@/assets/curso/tema3/1.png', alt='')
 
 
-    h2(data-aos="fade-up")#t_3_1 Tolerancias
+    h2(data-aos="fade-up") Tolerancias
 
     p(data-aos="fade-up").mb-5 La tolerancia se refiere al rango de variación permitido en las dimensiones de una pieza, establecido para garantizar que, a pesar de posibles variaciones en el proceso de fabricación, la pieza siga siendo funcional y cumpla con las especificaciones requeridas.
 
     
-    h2(data-aos="fade-up")#t_2_1.mb-5 Tipos de tolerancias
+    h2(data-aos="fade-up").mb-5 Tipos de tolerancias
 
     .row.justify-content-center.align-items-start.mb-5
       .col-lg-7
@@ -62,12 +62,12 @@
 
 
 
-    h2(data-aos="fade-up")#t_3_1 Ajustes
+    h2(data-aos="fade-up") Ajustes
 
     p(data-aos="fade-up").mb-5 El ajuste describe la relación de tolerancias entre dos piezas que deben ensamblarse. Esta relación se define por las tolerancias de cada pieza y cómo interactúan entre sí.
 
 
-    h2(data-aos="fade-up")#t_2_1.mb-5 Tipos de ajustes
+    h2(data-aos="fade-up").mb-5 Tipos de ajustes
 
     .row.justify-content-center.align-items-start.mb-5
       .col-lg-7
@@ -124,56 +124,29 @@
         p Los invitamos a explorar el material complementario de este curso, en esta sección encontrará recursos que le permitirán profundizar  y enriquecer su aprendizaje en los temas tratados en esta unidad.
         p.d-flex.my-4
           img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          span Peña, G. E. G. (2021). Las fuentes del derecho. Lecciones de introducción al derecho, 189
+          a(href="https://archive.org/details/engineeringdrawi00fren" target="_blank" rel="noopener noreferrer") French, T. E., Vierck, C. J., & Foster, R. J. (2002). Engineering Drawing and Graphic Technology. McGraw-Hill.
         p.d-flex.my-4
           img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          span Suárez, E. (2020). Introducción al derecho. Ediciones UNL
+          a(href="https://www.academia.edu/32721635/MANUAL_DE_DIBUJO_T%C3%89CNICO_I" target="_blank" rel="noopener noreferrer") Siqueiros, C. A. (2010). Manual de dibujo técnico. Academia de Ingeniería. Recuperado de Academia de Ingeniería de México:
         p.d-flex.my-4
           img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          span De Sousa, M. T. (2019). Introducción al derecho. Temis 
+          a(href="https://scholar.lib.vt.edu/ejournals/JTE/" target="_blank" rel="noopener noreferrer") Stoli, C. (2010). A primer on technical drawing. Journal of Technology Education, 22(1). Recuperado de Journal of Technology Education:
         p.d-flex.my-4
           img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          span Nieto, A. (2019). Una introducción al derecho.
+          a(href="https://docs.google.com/viewerng/viewer?url=ijarlie.com/AdminUpload/Pdf/An_overview_of_teaching_learning_process_in_Engineering_Graphics_ijarlie9390.pdf" target="_blank" rel="noopener noreferrer") Dixit, S., & Kumar, S. (2017). An overview of engineering graphics. International Journal of Engineering Research and Technology, 6(5), 78-83. Recuperado de ResearchGate:
+        p.d-flex.my-4
+          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+          a(href="https://www.academia.edu/35825997/NTC_Compendio_de_Dibujo_Tecnico_1.pdf" target="_blank" rel="noopener noreferrer") Instituto Colombiano de Normas Técnicas y Certificación. (2002). Compendio de dibujo técnico: Norma técnica colombiana.
       .col-12.col-md-6.col-lg-3.offset-lg-1
         figure
           img(src='@/assets/componentes/material-complementario.svg', alt='')
 </template>
 
 <script>
-import BannerInterno from '../../components/plantilla/BannerInterno'
 export default {
   name: 'Tema3',
-  components: {
-    BannerInterno,
-  },
-  data() {
-    return {
-      items: [
-        {
-          text:
-            '<b>Claridad.</b> Permiten una comprensión clara de la geometría del objeto.',
-        },
-        {
-          text:
-            '<b>Precisión.</b> Mantienen las dimensiones reales, evitando distorsiones.',
-        },
-        {
-          text:
-            '<b>Estándar.</b> Facilitan la comunicación entre ingenieros, arquitectos y fabricantes.',
-        },
-      ],
-    }
-  },
-  mounted() {
-    this.$nextTick(() => {
-      this.$aosRefresh()
-    })
-  },
+  data: () => ({
+    // variables de vue
+  }),
 }
 </script>
-
-<style lang="sass">
-.material-complementario
-  padding-top: 3rem
-  border-top: 9px solid $color-sistema-e
-</style>
