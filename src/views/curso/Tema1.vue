@@ -47,7 +47,6 @@
               .ps-4
                 h5 Proyección isométrica
                 p En esta proyección, el objeto se muestra en tres dimensiones, con los ejes separados en ángulos de 120° entre sí y manteniendo la misma escala en los tres ejes. Este tipo es común en diseño industrial y ensamblaje, ya que ofrece una vista del objeto en conjunto sin perspectiva.
-                p Similar a la isométrica, esta proyección mantiene la escala en dos de los tres ejes, mientras el tercero se representa en una escala distinta, permitiendo resaltar ciertas dimensiones del objeto.
 
 
           .row.p-4.px-md-5.py-lg-5.align-items-center
@@ -105,28 +104,27 @@
             iframe(width="560" height="315" src="https://www.youtube.com/embed/afV-H2S3ALg?si=vbRZ140Nfi0BbCXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
           figcaption Video: Leyenda del video
 
-    .row.material-complementario
-      h2 MATERIAL COMPLEMENTARIO
-      .col-12.col-md-6.col-lg-7
-        p Los invitamos a explorar el material complementario de este curso, en esta sección encontrará recursos que le permitirán profundizar  y enriquecer su aprendizaje en los temas tratados en esta unidad.
-        p.d-flex.my-4
-          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          a(href="https://archive.org/details/engineeringdrawi00fren" target="_blank" rel="noopener noreferrer") French, T. E., Vierck, C. J., & Foster, R. J. (2002). Engineering Drawing and Graphic Technology. McGraw-Hill.
-        p.d-flex.my-4
-          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          a(href="https://www.academia.edu/32721635/MANUAL_DE_DIBUJO_T%C3%89CNICO_I" target="_blank" rel="noopener noreferrer") Siqueiros, C. A. (2010). Manual de dibujo técnico. Academia de Ingeniería. Recuperado de Academia de Ingeniería de México:
-        p.d-flex.my-4
-          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          a(href="https://scholar.lib.vt.edu/ejournals/JTE/" target="_blank" rel="noopener noreferrer") Stoli, C. (2010). A primer on technical drawing. Journal of Technology Education, 22(1). Recuperado de Journal of Technology Education:
-        p.d-flex.my-4
-          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          a(href="https://docs.google.com/viewerng/viewer?url=ijarlie.com/AdminUpload/Pdf/An_overview_of_teaching_learning_process_in_Engineering_Graphics_ijarlie9390.pdf" target="_blank" rel="noopener noreferrer") Dixit, S., & Kumar, S. (2017). An overview of engineering graphics. International Journal of Engineering Research and Technology, 6(5), 78-83. Recuperado de ResearchGate:
-        p.d-flex.my-4
-          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          a(href="https://www.academia.edu/35825997/NTC_Compendio_de_Dibujo_Tecnico_1.pdf" target="_blank" rel="noopener noreferrer") Instituto Colombiano de Normas Técnicas y Certificación. (2002). Compendio de dibujo técnico: Norma técnica colombiana.
-      .col-12.col-md-6.col-lg-3.offset-lg-1
-        figure
-          img(src='@/assets/componentes/material-complementario.svg', alt='')
+    .bg-full-width.border-top.color-primario
+      .p-4.p-md-5
+        h2 MATERIAL COMPLEMENTARIO
+        .row.material-complementario
+          .col-12.col-md-6.col-lg-7
+            p Los invitamos a explorar el material complementario de este curso, en esta sección encontrará recursos que le permitirán profundizar  y enriquecer su aprendizaje en los temas tratados en esta unidad.
+            p.d-flex.my-4
+              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+              a(href="https://sjnavarro.wordpress.com/wp-content/uploads/2008/09/libro.pdf" target="_blank" rel="noopener noreferrer") Navarro, S. Dibujo Ortogonales.
+
+            p.d-flex.my-4
+              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+              a(href="https://view.genially.com/64e562ee43739000113d8333/interactive-content-proyecciones-ortogonales-y-3d" target="_blank" rel="noopener noreferrer") Focu (23 de agosto de 2023) Proyecciones ortogonales y 3d. Gennialy.
+
+            p.d-flex.my-4
+              img.me-3(src='@/assets/componentes/icono-yt.svg' :style="{'max-width':'16px'}")
+              a(href="https://youtu.be/WipvCRW6Igw?si=a0zpXRclDqvPNkSb" target="_blank" rel="noopener noreferrer") Aprendo en casa murcia (28 de enero de 2021) Vistas ortogonales.
+
+          .col-12.col-md-6.col-lg-3.offset-lg-1
+            figure
+              img(src='@/assets/componentes/material-complementario.svg', alt='')
 </template>
 
 <script>

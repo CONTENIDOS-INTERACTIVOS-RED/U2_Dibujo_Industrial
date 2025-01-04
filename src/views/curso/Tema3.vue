@@ -118,35 +118,245 @@
           figure
             img(src='@/assets/curso/tema3/6.png', alt='')
 
-    .row.material-complementario
-      h2 MATERIAL COMPLEMENTARIO
-      .col-12.col-md-6.col-lg-7
-        p Los invitamos a explorar el material complementario de este curso, en esta sección encontrará recursos que le permitirán profundizar  y enriquecer su aprendizaje en los temas tratados en esta unidad.
-        p.d-flex.my-4
-          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          a(href="https://archive.org/details/engineeringdrawi00fren" target="_blank" rel="noopener noreferrer") French, T. E., Vierck, C. J., & Foster, R. J. (2002). Engineering Drawing and Graphic Technology. McGraw-Hill.
-        p.d-flex.my-4
-          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          a(href="https://www.academia.edu/32721635/MANUAL_DE_DIBUJO_T%C3%89CNICO_I" target="_blank" rel="noopener noreferrer") Siqueiros, C. A. (2010). Manual de dibujo técnico. Academia de Ingeniería. Recuperado de Academia de Ingeniería de México:
-        p.d-flex.my-4
-          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          a(href="https://scholar.lib.vt.edu/ejournals/JTE/" target="_blank" rel="noopener noreferrer") Stoli, C. (2010). A primer on technical drawing. Journal of Technology Education, 22(1). Recuperado de Journal of Technology Education:
-        p.d-flex.my-4
-          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          a(href="https://docs.google.com/viewerng/viewer?url=ijarlie.com/AdminUpload/Pdf/An_overview_of_teaching_learning_process_in_Engineering_Graphics_ijarlie9390.pdf" target="_blank" rel="noopener noreferrer") Dixit, S., & Kumar, S. (2017). An overview of engineering graphics. International Journal of Engineering Research and Technology, 6(5), 78-83. Recuperado de ResearchGate:
-        p.d-flex.my-4
-          img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
-          a(href="https://www.academia.edu/35825997/NTC_Compendio_de_Dibujo_Tecnico_1.pdf" target="_blank" rel="noopener noreferrer") Instituto Colombiano de Normas Técnicas y Certificación. (2002). Compendio de dibujo técnico: Norma técnica colombiana.
-      .col-12.col-md-6.col-lg-3.offset-lg-1
-        figure
-          img(src='@/assets/componentes/material-complementario.svg', alt='')
+
+    .bg-full-width.border-top.actividad.bg-color-actividad
+      .p-4.p-md-5
+        #Actividad                
+          <Actividad :cuestionario="cuestionario"/>
+
+    .bg-full-width.border-top.color-primario
+      .p-4.p-md-5
+        h2 MATERIAL COMPLEMENTARIO
+        .row.material-complementario
+          .col-12.col-md-6.col-lg-7
+            p Los invitamos a explorar el material complementario de este curso, en esta sección encontrará recursos que le permitirán profundizar  y enriquecer su aprendizaje en los temas tratados en esta unidad.
+            p.d-flex.my-4
+              img.me-3(src='@/assets/componentes/link.svg' :style="{'max-width':'16px'}")
+              a(href="https://cadcamiutjaa.wordpress.com/wp-content/uploads/2019/02/guc3ada-de-ajustes-y-tolerancias-v1.1.pdf" target="_blank" rel="noopener noreferrer") Verde, E. (2019) Guia de tolerancias y ajustes. Unefa
+
+            p.d-flex.my-4
+              img.me-3(src='@/assets/componentes/icono-yt.svg' :style="{'max-width':'16px'}")
+              a(href="https://www.youtube.com/live/WCmpd1Iglwo?si=LXmxhXe8UhvSYTlu" target="_blank" rel="noopener noreferrer") ¿Cómo saber interpretar adecuadamente un plano 2D?
+
+          .col-12.col-md-6.col-lg-3.offset-lg-1
+            figure
+              img(src='@/assets/componentes/material-complementario.svg', alt='')
 </template>
 
 <script>
+import Actividad from '@/components/actividad/Actividad.vue'
 export default {
   name: 'Tema3',
-  data: () => ({
-    // variables de vue
-  }),
+  components: {
+    Actividad,
+  },
+  data() {
+    return {
+      cuestionario: {
+        tema: 'Sistemas numéricos y álgebra de Boole',
+        titulo: 'Ponte a prueba',
+        introduccion:
+          'Demuestra lo que aprendiste en esta unidad y pon a prueba tus conocimientos.',
+        barajarPreguntas: true,
+        preguntas: [
+          {
+            id: 1,
+            texto:
+              '¿Qué tipo de ajuste permite el movimiento relativo entre dos piezas?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Ajuste interferente',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Ajuste a presión',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'Ajuste deslizante',
+                esCorrecta: true,
+              },
+              {
+                id: 'd',
+                texto: 'Ajuste permanente',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 2,
+            texto:
+              '¿Cuál es la función principal de las tolerancias en los planos técnicos?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Establecer el color de las piezas',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Asegurar la precisión en las dimensiones',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'Representar el diseño en 3D',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Determinar los ángulos de los ejes',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 3,
+            texto:
+              '¿Cuál de las siguientes es una vista adicional en dibujo técnico?',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Vista lateral',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Vista isométrica',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'Vista inferior',
+                esCorrecta: true,
+              },
+              {
+                id: 'd',
+                texto: 'Vista superior',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 4,
+            texto: 'La proyección caballera presenta el objeto en:',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Tres dimensiones sin perspectiva',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto:
+                  'Dos dimensiones en vista frontal, con el tercer eje en ángulo',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'Una vista simplificada',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Una vista detallada de un área específica',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 5,
+            texto: 'Una sección parcial en dibujo técnico muestra:',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Todo el objeto en sección',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Solo una parte del objeto en sección',
+                esCorrecta: true,
+              },
+              {
+                id: 'c',
+                texto: 'Una vista desde el frente',
+                esCorrecta: false,
+              },
+              {
+                id: 'd',
+                texto: 'Una vista desde el costado',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+          {
+            id: 6,
+            texto: 'Las tolerancias geométricas incluyen:',
+            imagen: '',
+            barajarRespuestas: true,
+            opciones: [
+              {
+                id: 'a',
+                texto: 'Variaciones en el color de la pieza',
+                esCorrecta: false,
+              },
+              {
+                id: 'b',
+                texto: 'Dimensiones lineales',
+                esCorrecta: false,
+              },
+              {
+                id: 'c',
+                texto: 'Características de forma, orientación y ubicación',
+                esCorrecta: true,
+              },
+              {
+                id: 'd',
+                texto: 'Solo la longitud y el ancho',
+                esCorrecta: false,
+              },
+            ],
+            mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
+            mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          },
+        ],
+        mensaje_final_aprobado:
+          '¡Felicidades! Has superado la prueba con éxito.',
+        mensaje_final_reprobado:
+          'Te recomendamos repasar nuevamente la unidad para reforzar los conceptos clave antes de volver a intentarlo.',
+      },
+    }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      this.$aosRefresh()
+    })
+  },
 }
 </script>
+
+<style lang="sass"></style>

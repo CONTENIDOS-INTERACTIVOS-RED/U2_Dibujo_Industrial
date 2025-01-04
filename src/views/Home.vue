@@ -20,9 +20,9 @@
           //- Columna derecha con información
           .col-xl-7.info-section
             .content-wrapper.px-lg-4.pt-lg-4.px-xl-5.py-xl-5.text-start
-              p.home-main-title DIBUJO INDUSTRIAL
+              p.home-main-title UNIDAD 2
               h1.home-title.mb-4.text-uppercase Dibujo en proyección y representación de vistas
-              p.descripcion.mb-4 La unidad 1, fundamentos del dibujo técnico, explora los principios básicos, historia, normativas y aplicaciones del dibujo técnico. Aborda conceptos clave como tipos de líneas, proyecciones ortogonales y uso de escalas, asegurando precisión en los diseños. Los estudiantes practican con ejercicios aplicando herramientas CAD y normas ISO, DIN y ANSI para una comunicación gráfica efectiva en ingeniería y diseño.
+              p.descripcion.mb-4 La proyección ortogonal es un método de dibujo que representa objetos tridimensionales en vistas bidimensionales (frontal, superior, lateral), crucial en ingeniería y diseño, ya que permite comprender formas y dimensiones sin perspectiva. Las secciones y cortes facilitan la visualización de detalles internos, esenciales para el ensamblaje y fabricación. Asimismo, las tolerancias y ajustes son conceptos clave en el diseño técnico, asegurando que las piezas mantengan precisión y funcionalidad en su ensamblaje. Estos elementos son fundamentales para comunicar y lograr precisión en la fabricación y ensamblaje de componentes mecánicos.
 
               p.descripcion.mb-4.mb-lg-5.pb-lg-4.text-bold ¡Transformen sus ideas en realidad con confianza y creatividad!
 

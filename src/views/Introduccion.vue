@@ -16,7 +16,7 @@
               .col-lg
                 p.mb-0 La proyección ortogonal, en particular, se destaca por su capacidad para #[strong proporcionar vistas claras y detalladas de cada cara de un objeto], lo que es fundamental en disciplinas como la ingeniería, la arquitectura y el diseño industrial.
 
-          p.mb-4(data-aos="fade-up") También se analiza la disposición de las vistas según los estándares ISO, así como las secciones y cortes, que revelan la geometría interna de los objetos.  Por último, se profundiza en el papel de las tolerancias y ajustes, conceptos cruciales para asegurar la correcta fabricación y ensamblaje de piezas. A través de esta exploración, se busca destacar la relevancia de estos elementos en la práctica del dibujo técnico y su impacto en la producción industrial.
+          p.mb-4(data-aos="fade-up") También se analiza la disposición de las vistas según los estándares ISO, así como las secciones y cortes, que revelan la geometría interna de los objetos. Por último, se profundiza en el papel de las tolerancias y ajustes, conceptos cruciales para asegurar la correcta fabricación y ensamblaje de piezas. A través de esta exploración, se busca destacar la relevancia de estos elementos en la práctica del dibujo técnico y su impacto en la producción industrial.
 
 
         .col-lg-4

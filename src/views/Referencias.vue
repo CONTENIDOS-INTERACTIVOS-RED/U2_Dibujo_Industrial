@@ -1,6 +1,6 @@
 <template lang="pug">
 .curso-main-container.referencias
-  BannerInterno(icono="fas fa-book" subTitulo="REFERENCIAS BIBLIOGRÁFICAS" titulo="UNIDAD 1. FUNDAMENTOS DEL DIBUJO TÉCNICO")
+  BannerInterno(icono="fas fa-book" subTitulo="REFERENCIAS BIBLIOGRÁFICAS" titulo="Unidad 2. Dibujo en proyección y representación de vistas")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
     .referencias__item.d-flex(v-for="(ref, index) in orderedData" :key="ref.link")
       span.py-4.d-block.me-3(v-html="index + 1")

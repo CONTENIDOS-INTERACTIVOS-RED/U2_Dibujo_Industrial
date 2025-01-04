@@ -1,6 +1,6 @@
 <template lang="pug">
 .curso-main-container.glosario
-  BannerInterno(icono="fas fa-atlas" subTitulo="GLOSARIO" titulo="UNIDAD 1. FUNDAMENTOS DEL DIBUJO TÉCNICO")
+  BannerInterno(icono="fas fa-atlas" subTitulo="GLOSARIO" titulo="Unidad 2. Dibujo en proyección y representación de vistas")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
     .glosario__letra-item.mb-2(v-for="letra in orderedData" :key="'letra-'+letra.letra")
       .glosario__letra-item__letra.me-4
